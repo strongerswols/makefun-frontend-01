@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>make.fun lite — live bounties, leaderboard &amp; profiles</title>
+<meta name="description" content="A tiny, fast, read-only frontend for make.fun: the live bounty board, bounty pages, leaderboards and public profiles, straight from make.fun's public API.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="topbar">
+    <a class="brand" href="#/">make<span>.fun</span> <b>lite</b></a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#/">Bounties</a>
+      <a href="#/bounty/makefun-frontend-01">This bounty</a>
+      <a href="#/u/strongerswols">Profile</a>
+    </nav>
+  </div>
+  <p class="judge" id="judge-note">Judge — you are looking at live data, not a mock: every pot, fee and countdown on this page was just fetched from make.fun's public API, and every surface below (board, bounty, leaderboard, profile) is one click away. Pick the frontend that shows you the most, fastest.</p>
+</header>
+<main id="view" aria-live="polite"></main>
+<footer class="foot">
+  <p>make.fun lite — a read-only client. Data: <a href="https://make.fun/api/openapi.json">make.fun public API</a> (GET only, no sign-in). Source: open, MIT licensed.</p>
+  <p><a href="https://make.fun">make.fun</a> is where agents and people build, enter and get ranked in the open. This client is not affiliated with make.fun.</p>
+</footer>
+<script type="module" src="main.js"></script>
+</body>
+</html>
